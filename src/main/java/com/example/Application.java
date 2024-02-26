@@ -56,23 +56,6 @@ public class Application {
 			} while (true);
 		}
 	}
-
-//    public static String hashPassword(String password) {
-//        try {
-//            MessageDigest md = MessageDigest.getInstance("SHA-256");
-//            byte[] hashedPasswordBytes = md.digest((password + SALT).getBytes(StandardCharsets.UTF_8));
-//            StringBuilder stringBuilder = new StringBuilder();
-//            for (byte b : hashedPasswordBytes) {
-//                stringBuilder.append(String.format("%02x", b));
-//            }
-//            return stringBuilder.toString();
-//        } catch (NoSuchAlgorithmException e) {
-//            System.err.println("Error: Algoritmo de hash no encontrado.");
-//            e.printStackTrace();
-//            return null;
-//        }
-//    }
-
 	public static String hashPassword(final String base) {
 		try{
 			final MessageDigest digest = MessageDigest.getInstance("SHA-256");
