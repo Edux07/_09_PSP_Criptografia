@@ -13,7 +13,7 @@ import java.util.Scanner;
 @SpringBootApplication
 public class Application {
 
-	private static final String SALT = "puto"; // Sal constante
+	private static final String SALT = "puto";
 
 	public static void main(String[] args) {
 		// Inicializar la aplicación Spring Boot
